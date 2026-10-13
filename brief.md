@@ -27,5 +27,8 @@ Oman's Personal Data Protection Law and Executive Regulations establish requirem
 
 Resource: MTCIT: Personal Data Protection - https://www.mtcit.gov.om/sectors/governance/personal
 ## Misconception in My Track
+A common misconception is that DNS over HTTPS guarantees that every DNS answer is authentic and therefore replaces DNSSEC. In fact, DoH protects the connection between the client and resolver, while DNSSEC validates the authenticity and integrity of DNS data. A resolver can still return incorrect information over an encrypted connection. Section 9, Security Considerations, of RFC 8484 explains that DoH and DNSSEC are independent, compatible protocols solving different problems. The login service therefore needs both secure DNS transport and an appropriate DNSSEC validation strategy.
+## Open Question
+How can the authority deploy DNS over HTTPS while preserving internal government domain resolution, DNSSEC validation, and the security team's ability to detect suspicious DNS activity?
 
 ## Open Question
