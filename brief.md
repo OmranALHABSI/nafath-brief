@@ -15,11 +15,17 @@ Android limits access to protected data and device features through application 
 
 Resource: Permissions on Android - https://developer.android.com/guide/topics/permissions/overview
 ## Networking
+DNS over HTTPS (DoH) sends DNS queries and responses through HTTPS, protecting communication between the client and resolver against eavesdropping and modification. For the login service, this helps protect domain lookups on untrusted networks. However, the resolver can still see queries, and DoH does not replace DNSSEC validation. The authority should choose a trusted resolver and consider compatibility with internal DNS and security monitoring.
 
+Resource: RFC 8484: DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484.html
 ## Cybersecurity
+Phishing-resistant MFA uses cryptographic authentication bound to the genuine service, preventing a fake website from capturing a reusable login response. A suitable option is a FIDO2/WebAuthn passkey or security key that requires local user verification through a PIN or biometric. This combines possession with another factor. The authority should verify that user verification is enforced and provide secure enrollment and account recovery procedures.
 
+Resource: NIST SP 800-63B-4: Authentication and Authenticator Management - https://pages.nist.gov/800-63-4/sp800-63b.html
 ## Data
+Oman's Personal Data Protection Law and Executive Regulations establish requirements for entities within their scope, including consent, processing records, privacy policies, and breach notification. MTCIT explains that state administrative units and other public legal entities are exempt from the Law; a separate government policy under Circular 6/2024 applies to state administrative units. The authority should establish its legal status and applicable rules before collecting or storing citizens' information.
 
+Resource: MTCIT: Personal Data Protection - https://www.mtcit.gov.om/sectors/governance/personal
 ## Misconception in My Track
 
 ## Open Question
